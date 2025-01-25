@@ -16,7 +16,7 @@ Create an signup form for an imaginary service to practice.
 
 1. Download background image from [unsplash.com](https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA)
 2. Pick an external font for the 'logo' section. [Norse Bold](https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf)
-3. Get image-sidebar: [Odin Log](https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png)
+3. Get image-sidebar: [Odin Logo](https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png)
 
 ### Step 3. Some Tips
 
