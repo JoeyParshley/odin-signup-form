@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
 }
 
 @font-face {
@@ -23,7 +25,6 @@ body {
   align-items: center;
   justify-content: center;
   margin: auto;
-  width: 1440px;
 }
 
 #sidebar {
@@ -32,16 +33,18 @@ body {
   background-image: url("../images/halie-west-25xggax4bSA-unsplash.jpg");
   background-size: cover;
   height: 100%;
-  flex: 1 1 auto;
+  flex: 1 400px;
   flex-direction: column;
 }
 
-#sidebar::before {
+#sidebar::before,
+#form-wrapper::before {
   content: "";
   flex: 1;
 }
 
-#sidebar::after {
+#sidebar::after,
+#form-wrapper::after {
   content: "";
   flex: 3;
 }
@@ -50,9 +53,17 @@ body {
   display: flex;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
-  height: 115px;
+  /* height: 115px; */
   justify-content: center;
   align-items: center;
+  vertical-align: middle;
+}
+
+#logo h1 {
+  font-family: "NorseBold";
+  font-size: 60px;
+  color: #fff;
+  vertical-align: middle;
 }
 
 #logo img {
@@ -60,16 +71,96 @@ body {
 }
 
 #form-wrapper {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #eaeaea;
   border: 1px solid indigo;
   height: 1000px;
-  flex: 2 1 auto;
 }
 
-#logo {
-  color: #fff;
+#text {
+  padding-left: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1 85px;
 }
 
-#logo h1 {
-  font-family: "NorseBold";
+#form {
+  padding-left: 0px;
+  background-color: #eaeaea;
+  flex: 2 1 0;
+  width: 100%;
+  height: 300px;
+}
+
+form {
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: 50px;
+  padding-top: 20px;
+  background: white;
+}
+
+.form-group {
+  padding-top: 20px;
+  display: flex;
+  flex-flow: row;
+  flex: 1 1 0;
+}
+
+.form-control {
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+p,
+i,
+a,
+legend {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.3rem;
+}
+
+a {
+  color: #596d48;
+  text-decoration: none;
+}
+
+label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+input {
+  padding: 5px 10px;
+  min-width: 200px;
+  border: solid 1px #eaeaea;
+  border-radius: 5px;
+}
+
+input:focus {
+  border: thin 1px blue;
+  box-shadow: 2px 2px 5px #666;
+}
+
+input:required {
+  border: solid 1px #ac4242ed;
+}
+
+button {
+  background-color: #596d48;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
