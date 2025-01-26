@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "NorseBold";
+  src: url("https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf");
+}
+
 body {
   background-color: black;
   height: 100vh;
@@ -22,18 +27,49 @@ body {
 }
 
 #sidebar {
+  display: flex;
   background-color: transparent;
   background-image: url("../images/halie-west-25xggax4bSA-unsplash.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   height: 100%;
   flex: 1 1 auto;
+  flex-direction: column;
+}
+
+#sidebar::before {
+  content: "";
+  flex: 1;
+}
+
+#sidebar::after {
+  content: "";
+  flex: 3;
+}
+
+#logo {
+  display: flex;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 115px;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo img {
+  height: 115px;
 }
 
 #form-wrapper {
   background-color: white;
-
   border: 1px solid indigo;
   height: 1000px;
   flex: 2 1 auto;
+}
+
+#logo {
+  color: #fff;
+}
+
+#logo h1 {
+  font-family: "NorseBold";
 }
